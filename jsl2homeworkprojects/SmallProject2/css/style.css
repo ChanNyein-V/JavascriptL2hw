@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+
+    background: linear-gradient(
+        320deg,
+        white 20%,
+        skyblue 20%
+    );
+}
+
+.quiz-container{
+    background-color: #fff;
+    border-radius: 10px;
+                /* h v b c */
+    box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.3);
+
+    width: 600px;
+
+    /* button ကထွက်နေတဲ့ ပိုနေတဲ့အသားကိုဖယ်ထုတ်လိုက်တာ */
+    overflow: hidden;
+}
+
+.quiz-container .quiz-header{
+    /* 1rem = 16 px */
+    padding: 4rem;
+}
+
+.quiz-header h2{
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+ul{
+    /* list-style-type: none; */
+    list-style: none;
+    padding: 0;
+}
+
+ul li{
+    font-size: 1.2rem;
+    /* top&bottom left&right */
+    margin: 1rem 0;
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+button{
+    background-color: #4287f5;
+    width: 100%;
+    padding: 1.3rem;
+    font-size: 1.1rem;
+    color: #fff;
+    font-family: inherit;
+    /* border-color: #4287f5; */
+    border: none;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #f2660f;
+}
+
+button:focus{
+    outline: 0;
+    background-color: #ab210c;
+}
+
+
+
+/* 
+quiz-container ထဲမှာ padding မယူပဲ quiz-header မှာယူရတဲ့ အကြောင်းရင်း
+padding ကို quiz-container မှာယူလိုက်ရင် button ကြီးပါ padding ယူသွားလိမ့်မယ် အဲလိုမဖြစ်ချင်လို့
+quiz-header မှာပဲ padding ယူလိုက်တာ အဲလိုယူလိုက်ရင် မေးခွန်းနဲ့အဖြေတွေမှာပဲ padding ပါမှာ button မပါတော့ဘူး
+
+li ထဲမှာရှိတဲ့ disc/bullet တို့ကိုဖယ်ချင်ရင် list-style-type ကိုသုံးတယ် 
+ul/ol ထဲမှာဆိုရင် list-style ကိုသုံးတယ် 
+ဒါကတော့format မဟုတ်ဘူး
+
+overflow:hidden; ကပိုနေတဲ့အသားကိုဖြတ်ထုတ်လိုက်တာ/main element ထဲမှာရှိတဲ့ child ကနေထွက်တဲ့ပိုနေတဲ့အသားတွေကိုဖယ်ထုတ်တာ
+*/
